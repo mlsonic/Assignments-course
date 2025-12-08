@@ -1,0 +1,67 @@
+#include<stdio.h>
+
+/*
+//1
+int main(){
+    int a,b,c;
+    float avg;
+    prinf("Enter the number");
+    scanf("%d %d %d",&a,&b,&c);
+    avg =(a+b+c)/3;
+    printf("Average of three number is %.2f",avg);
+    return 0;
+
+}
+    */
+
+/*
+//2
+int main(){
+    int a;
+    float area;
+    printf("Enter the number");
+    scanf("%d",&a);
+    area=2*3.14*a ;
+    printf("Circumference of circle if %d",area);
+    return 0;
+}
+*/
+
+/*
+//3
+int main() {
+    int r,y;
+    float ans,a;
+    printf("Enter amount,rate and year :");
+    scanf("%f%d%d",&a,&r,&y);
+    ans=(r*y*a)/100;
+    printf("simple interest is %.2f",ans);
+    return 0;
+}
+    */
+
+/*
+//4
+int main(){
+    int a,b,c;
+    printf("Enter the length,breath,height");
+    scanf("%d%d%d",&a,&b,&c);
+    printf("Volume of cuboid is %d",a*c*b);\
+    return 0;
+
+}
+*/
+
+/*
+//5
+int main(){
+    float a,b,c;
+    printf("what was the cost price and selling price for dozen ?");
+    scanf("%f%f",&a,&b);
+    c=((b-a)*25)/12;
+    printf("Profit/loss is %.2f",c);
+    return 0;
+}
+    */
+
+
