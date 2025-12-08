@@ -1,0 +1,95 @@
+#include <stdio.h>
+/*
+//1
+int main() {
+    printf("Hello Student");
+    return 0;
+}
+    */
+
+/*
+//2
+int main(){
+    printf("Hello\nstudent");
+    return 0;
+}
+    */
+
+/*
+//3
+int main(){
+    printf("\"MySirG\"");
+    return 0;
+}
+*/
+
+/*
+//4
+int main(){
+    printf("\\n");
+    return 0;
+}
+    */
+
+/*
+//5 
+int main(){
+    printf("\\r");
+    return 0;
+}
+    */
+   
+/*
+//6
+int main(){
+    printf("\"Teacher\'s Day\"");
+    return 0;
+}
+*/
+
+/*
+//7
+int main(){
+    int a,b;
+    printf("Enter the Numbers");
+    scanf("%d%d",&a,&b);
+    printf("Sum of %d and %d is %d",a,b,a+b);
+    return 0;
+}
+    */
+
+/*
+//8
+int main(){
+    int a;
+    printf("Enter the Number");
+    scanf("%d",&a);
+    printf("sqaure of %d is %d",a,a*a);
+    return 0;
+}
+    */
+
+/*
+//9
+int main(){
+    int a,b;
+    printf("Enter length of rectangle; ");
+    scanf("%d",&a);
+    printf("Enter breath of reactangle: ");
+    scanf("%d",&b);
+    printf("area of reactange is %d",a*b);
+    return 0;
+}
+ */
+
+/*
+ //10
+ int main() {
+    int r;
+    printf("Enter the radius of circle: ");
+    scanf("%d",&r);
+    r=3.14*r*r;
+    printf("Area of circle is %d",r);
+    return 0;
+ }
+    */
