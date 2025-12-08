@@ -86,10 +86,11 @@ int main(){
  //10
  int main() {
     int r;
+    float a;
     printf("Enter the radius of circle: ");
     scanf("%d",&r);
-    r=3.14*r*r;
-    printf("Area of circle is %d",r);
+    a=3.14*r*r;
+    printf("Area of circle is %d",a);
     return 0;
  }
     */
