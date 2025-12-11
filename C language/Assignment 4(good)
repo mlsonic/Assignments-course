@@ -1,0 +1,98 @@
+#include<stdio.h>
+
+/*
+//1
+int main(){
+    printf("%d",sizeof('A'));
+    return 0;
+}
+*/
+
+/*
+//2
+int main(){
+    printf("%d",sizeof(34.5));
+    return 0;
+}
+*/
+
+/*
+//3
+int main(){
+    char a='A';
+    a++; //or ++a;
+    printf("%c",a);
+    return 0;
+}
+*/
+
+/*
+//4
+int main(){
+    int a,b,c;
+    printf("enter two integers: ");
+    scanf("%d %d",&a,&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("%d %d",a,b);
+    return 0;
+}
+*/
+
+/*
+//5 
+int main(){
+    int a,b;
+    printf("enter two integers: ");
+    scanf("%d %d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d %d",a,b);
+    return 0;
+
+}
+*/
+
+/*
+//6
+int main(){
+    int a,b;
+    printf("enter two integers: ");
+    scanf("%d %d",&a,&b);
+    a=a*b;
+    b=a/b;
+    a=a/b;
+    printf("%d %d",a,b);
+    return 0;
+}
+*/
+
+/*
+//7
+int main(){
+    int a,b;
+    printf("enter two integers: ");
+    scanf("%d %d",&a,&b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("%d %d",a,b);
+    return 0;
+}
+
+*/
+
+/*
+//8
+int main(){
+    int a,b;
+    printf("enter two integers: ");
+    scanf("%d %d",&a,&b);
+    a=a+b-(b=a);
+    printf("%d %d",a,b);
+    return 0;
+}
+*/
+
