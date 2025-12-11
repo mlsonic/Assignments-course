@@ -1,0 +1,59 @@
+#include<stdio.h>
+
+/*
+//1
+int main(){
+    int a;
+    printf("Enter the number: ");
+    scanf("%d",&a);
+    printf("%d",a/100+a/10%10+a%10);
+    return 0;
+}
+*/
+
+/*
+//2
+int main(){
+    char a='+';
+    printf("%d",a);
+    return 0;
+}
+*/
+
+/*
+//3
+int main(){
+    printf("%d\n",sizeof(int));
+    printf("%d\n",sizeof(char));
+    printf("%d\n",sizeof(double));
+    printf("%d\n",sizeof(float));
+    return 0;
+}
+*/
+
+/*
+//4
+int main(){
+    int a,b;
+    printf("enter the number: ");
+    scanf("%d",&a);
+    b=a%10;
+    printf("%d",a-b);
+    return 0;
+}
+*/
+
+/*
+//5 
+
+int main(){
+    int a,b;
+    printf("enter the numbers: ");
+    scanf("%d %d",&a,&b);
+    a*=10;
+    printf("%d",a+b);
+    return 0;
+}
+*/
+
+
