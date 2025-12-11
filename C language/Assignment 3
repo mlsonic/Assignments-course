@@ -1,0 +1,57 @@
+#include<stdio.h>
+
+/*
+//1
+int main(){
+    char a;
+    printf("Enter the Char: ");
+    scanf("%c",&a);
+    printf("%d",a);
+    return 0;
+}
+*/
+
+/*
+//2
+int main(){
+    int a;
+    printf("Enter the ASCII Code; ");
+    scanf("%d",&a);
+    printf("%c",a);
+    return 0;
+}
+*/
+
+/*
+//3
+int main(){
+    char a,b,c;
+    printf("Enter the char: ");
+    scanf("%c %c %c",&a,&b,&c);
+    printf("%d %d %d",a,b,c);
+    return 0;
+}
+*/
+
+/*
+//4
+int main(){
+    int x;
+    printf("Enter the Number: ");
+    scanf("%d",&x);
+
+    printf("%d",x%10);
+    return 0;
+}
+*/
+
+/*
+//5 
+int main(){
+    int a;
+    printf("Enter the Number: ");
+    scanf("%d",&a);
+    printf("%d",a/10);
+    return 0;
+}
+*/
