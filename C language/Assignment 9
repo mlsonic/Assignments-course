@@ -1,0 +1,74 @@
+#include<stdio.h>
+/*
+//1
+int main(){
+    float a,b;
+    printf("Enter the cost price : ");
+    scanf("%f",&a);
+    printf("Enter the selling price : ");
+    scanf("%f",&b);
+    if(b-a>=0){
+        printf("%.2f%% profit ",((b-a)/a)*100);
+    }
+    else{
+      printf("%.2f%% loss ",((a-b)/a)*100);
+    }
+    return 0;
+}
+*/
+
+/*
+//2
+int main(){
+    float a,b,c,d,e;
+    printf("enter the marks of all subjects");
+    scanf("%d",&a,&b,&c,&d,&e);
+    if(a>=33 && b>=33 && c>=33 && d>=33 && e>=33){
+        printf("Pass in Examination");
+    }
+    else{
+        printf("Fail in Examination");
+    }
+    return 0;
+}
+*/
+
+/*
+//3
+int main(){
+    char a;
+    printf("Enter the aplhabet: ");
+    scanf("%c",&a);
+    if (a >= 'a' && a <= 'z')
+    printf("Lowercase");
+    else if (a >= 'A' && a <= 'Z')
+    printf("Uppercase");
+    else
+    printf("Not an alphabet");
+    return 0;
+}
+*/
+
+/*
+//4
+int main(){
+    int a;
+    printf("Enter the number: ");
+    scanf("%d",&a);
+    if(a%2==0 && a%3==0 ) printf("divisible");
+    else printf("Not divisble");
+    return 0;
+}
+*/
+
+/*
+//5
+int main(){
+    int a;
+    printf("Enter the number: ");
+    scanf("%d",&a);
+    if(a%7==0 || a%3==0 ) printf("divisible");
+    else printf("Not divisble");
+    return 0;
+}
+*/
