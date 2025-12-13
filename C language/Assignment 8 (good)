@@ -1,0 +1,82 @@
+#include<stdio.h>
+
+/*
+//1
+int main(){
+    int a;
+    printf("Enter the number: ");
+    scanf("%d",&a);
+    if(a>99 && a<1000) printf("This is three digit number");
+    else printf("This is not three digit number");
+    return 0;
+}
+*/
+
+/*
+//2
+int main(){
+    int a,b;
+    printf("Enter the numbers a: ");
+    scanf("%d",&a);
+    printf("Enter the numbers b: ");
+    scanf("%d",&b);
+    if(a>b) printf("%d",a);
+    else printf("%d",b);
+    return 0;
+}
+*/
+
+/*
+//3
+int main(){
+    int a,b,c;
+    printf("Enter a,b,c :");
+    scanf("%d %d %d",&a,&b,&c );
+    int D=b*b-(4*a*c);
+    if (D==0) printf("Roots are real and equal");
+    else {
+        if (D>0) printf("Roots are real and distinct");
+        else printf("Roots are imaginary and complex");
+    }
+    return 0;
+}
+*/
+
+/*
+//4
+int main(){
+    int a;
+    printf("Enter the Year: ");
+    scanf("%d",&a);
+        if(a%100==0) {
+          if(a%400==0) printf("%d is leap year",a);
+          else printf("%d is not  leap year",a);
+        }
+        else {
+            if (a%4==0 && a%100!=0){
+            printf("%d is leap year",a);
+            }
+            else printf("%d is not a leap year",a);
+        }
+    return 0;
+}
+*/
+
+/*
+//5 
+int main(){
+    int a,b,c;
+    printf("Enter a,b,c :");
+    scanf("%d %d %d",&a,&b,&c );
+    if(a>b){
+        if(a>c) printf("%d is the greatest",a);
+        else printf("%d is the greatest",c);
+    }
+    else {
+        if(b>c) printf("%d is the greatest",b);
+        else printf("%d is the greatest",c);
+    }
+    return 0;
+}
+*/
+
