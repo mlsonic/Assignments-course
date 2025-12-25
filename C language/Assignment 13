@@ -1,5 +1,5 @@
 #include <stdio.h> 
-
+//we have to use formula sequence and series but we have to use loop
 //1
 /*
 int main(){
