@@ -1,0 +1,120 @@
+#include <stdio.h> 
+
+//1
+/*
+int main(){
+    int n,a = -1,b = 1,c;
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    while(n){
+        c = a + b;
+        a = b; 
+        b = c;
+        n--;
+    }
+    printf("%d",c);
+    return 0;
+}
+*/
+
+//2
+/*
+int main(){
+    int n,a = -1,b = 1,c;
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    while(n){
+        c = a + b;
+        printf("%d ",c);
+        a = b; 
+        b = c;
+        n--;
+    }
+    return 0;
+}
+*/
+
+//3
+/*
+int main(){
+    int n,a = -1,b = 1,c;
+    printf("Enter the number : ");
+    scanf("%d",&n);
+    while(1){
+        c = a + b;
+        if(c == n) {
+            printf("Yes present");
+            break;
+        }
+        if(c > n) {
+            printf("not present");
+            break;
+        }
+        a = b; 
+        b = c;
+    }
+    return 0;
+}
+*/
+
+//4
+/*
+int main()
+{
+    int num,x,digits,digit,i,p,sum;
+    printf("Enter a number");
+    scanf("%d",&num);
+    x=num;
+
+    //count digits (say digits)
+    for(digits=0;x;x=x/10)
+        digits++;
+    // calculate sum of pow(each digit, digits)
+    
+    for(x=num,sum=0;x;x=x/10)
+    {
+        digit=x%10;
+        for(i=1,p=1;i<=digits;i++)
+            p=p*digit;
+        sum=sum+p;
+    }
+    // compare result with num
+    if(sum==num)
+        printf("Armstrong Number");
+    else
+        printf("Not an Armstrong Number");
+    printf("\n");
+    return 0;
+}
+*/
+
+//5
+/*
+int main()
+{
+    int num,x,digits,digit,i,p,sum;
+    for(num=1;num<=1000;num++)
+    {
+        x=num;
+
+        //count digits (say digits)
+        for(digits=0;x;x=x/10)
+            digits++;
+        // calculate sum of pow(each digit, digits)
+        
+        for(x=num,sum=0;x;x=x/10)
+        {
+            digit=x%10;
+            for(i=1,p=1;i<=digits;i++)
+                p=p*digit;
+            sum=sum+p;
+        }
+        // compare result with num
+        if(sum==num)
+            printf("%d ",num);
+        
+    }
+    printf("\n");
+    return 0;
+}
+*/
