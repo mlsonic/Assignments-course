@@ -1,0 +1,194 @@
+#include<stdio.h>
+#include<stdlib.h>
+//Q1
+void p1()
+{
+    int month;
+    printf("Enter month number");
+    scanf("%d",&month);
+    switch(month)
+    {
+        case 1:  case 3: case 5: case 7:
+        case 8:  case 10: case 12:
+            printf("31 Days");
+            break;
+        case 4: case 6: case 9: case 11:
+            printf("30 Days");
+            break;
+        case 2:
+            printf("28 or 29 Days");
+            break;
+        default:
+            printf("\nInvalid Month number");
+    }
+}
+void p2()
+{
+    int choice,a,b;
+    while(1)
+    {
+        system("clear");
+        printf("\n1. Addition");
+        printf("\n2. Subtraction");
+        printf("\n3. Multiplication");
+        printf("\n4. Division");
+        printf("\n5. Exit");
+        printf("\n\nEnter your choice");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+                printf("\nEnter two numbers");
+                scanf("%d%d",&a,&b);
+                printf("Sum is %d",a+b);
+                break;
+            case 2:
+                printf("\nEnter two numbers");
+                scanf("%d%d",&a,&b);
+                printf("Difference is %d",a-b);
+                break;
+            case 3:
+                printf("\nEnter two numbers");
+                scanf("%d%d",&a,&b);
+                printf("Product is %d",a*b);
+                break;
+            case 4:
+                printf("\nEnter two numbers");
+                scanf("%d%d",&a,&b);
+                printf("Quotient is %d",a/b);
+                break;
+            case 5:
+                exit(0);
+            default:
+                printf("\nInvalid choice, retry");
+        }
+    }
+}
+void p3()
+{
+    int n;
+    //0=Sun, 1=Mon ... 6=Sat
+    printf("Enter day number of a the week");
+    scanf("%d",&n);
+    switch(n%7)
+    {
+        case 0:
+            printf("Happy Holiday");
+            break;
+        case 1:
+            printf("Monday Motivation");
+            break;
+        case 2:
+            printf("No non-veg today");
+            break;
+        case 3:
+            printf("Buddh sab shubh");
+            break;
+        case 4:
+            printf("Mid Week celebration");
+            break;
+        case 5:
+            printf("Thank God it is Friday");
+            break;
+        case 6:
+            printf("Best day of the week");
+            break;
+    }
+}
+void p4()
+{
+    int choice,a,b,c;
+    while(1)
+    {
+        system("clear");
+        printf("\n1. Check Isosceles Triangle");
+        printf("\n2. Check Right Angled Triangle");
+        printf("\n3. Check Equilateral Triangle");
+        printf("\n4. Exit");
+        printf("\n\nEnter your choice");
+        scanf("%d",&choice);
+
+        switch(choice)
+        {
+            case 1:
+                printf("Enter sides of a triangle");
+                scanf("%d%d%d",&a,&b,&c);
+                if(a+b>c && a+c>b &&b+c>a)
+                {
+                    if(a==b || a==c ||b==c)
+                        printf("Isosceles Triangle");
+                    else
+                        printf("Not an isosceles triangle");
+                }
+                else
+                    printf("Invalid Triangle sides");
+                
+                break;
+            case 2:
+                printf("Enter sides of a triangle");
+                scanf("%d%d%d",&a,&b,&c);
+                if(a+b>c && a+c>b &&b+c>a)
+                {
+                    if(a*a+b*b==c*c || a*a+c*c==b*b || b*b+c*c==a*a)
+                        printf("Right Angled Triangle");
+                    else
+                        printf("Not a Right Angled triangle");
+                }
+                else
+                    printf("Invalid Triangle sides");
+                
+                break;
+            case 3:
+                printf("Enter sides of a triangle");
+                scanf("%d%d%d",&a,&b,&c);
+                if(a+b>c && a+c>b &&b+c>a)
+                {
+                    if(a==b && a==c)
+                        printf("Equilateral Triangle");
+                    else
+                        printf("Not an Equilateral triangle");
+                }
+                else
+                    printf("Invalid Triangle sides");
+                
+                break;
+            case 4:
+
+                exit(0);
+            default:
+                printf("\nInvalid choice, retry");
+        }
+    }
+}
+void p5()
+{
+//      if(var == 1)
+//          printf("good");
+//      else if(var == 2)
+//          printf("better");
+//      else if(var == 3)
+//          printf("best");
+//      else
+//          printf(“invalid");
+
+    switch(var)
+    {
+        case 1:
+            printf("good");
+            break;
+        case 2:
+            printf("better");
+            break;
+        case 3:
+            printf("best");
+            break;
+        default:
+            printf("Invalid");
+    }
+}
+int main()
+{
+    p4();
+    printf("\n");
+    return 0;
+}
