@@ -1,0 +1,182 @@
+#include<stdio.h>
+void p1()
+{
+    int marks;
+    printf("Enter marks: ");
+    scanf("%d",&marks);
+    switch(marks)
+    {
+        case 90 ... 100:
+            printf("GRADE: A");
+            break;
+        case 80 ... 89:
+            printf("GRADE: B");
+            break;
+        case 70 ... 79:
+            printf("GRADE: C");
+            break;
+        case 60 ... 69:
+            printf("GRADE: D");
+            break;
+        case 50 ... 59:
+            printf("GRADE: E");
+            break;
+        case 0 ... 49:
+            printf("GRADE: F");
+            break;
+        default:
+            printf("Invalid Marks");
+    }
+}
+void p2()
+{
+    int choice,a,b,f;
+    while(1)
+    {
+        system("clear");
+        printf("\n1. Factorial");
+        printf("\n2. Even or Odd");
+        printf("\n3. Area of Circle");
+        printf("\n4. Sum of First N natural numbers");
+        printf("\n5. Exit");
+        printf("\n\nEnter your choice");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+                printf("\nEnter a number");
+                scanf("%d",&a);
+                f=1;
+                while(a)
+                {
+                    f=f*a;
+                    a--;
+                }
+                printf("Factorial is %d",f);
+                break;
+            case 2:
+                printf("\nEnter a number");
+                scanf("%d",&a);
+                printf(a&1?"Odd":"Even");
+                break;
+            case 3:
+                printf("\nEnter radius");
+                scanf("%d",&a);
+                printf("Area is %f",3.14*a*a);
+                break;
+            case 4:
+                printf("\nEnter a number");
+                scanf("%d",&a);
+                f=0;
+                while(a)
+                {
+                    f=f+a;
+                    a--;
+                }
+                printf("Sum is %d",f);
+                break;
+            case 5:
+                exit(0);
+            default:
+                printf("\nInvalid choice, retry");
+        }
+    }
+}
+void p3()
+{
+    char ch;
+    printf("Enter a character");
+    scanf("%c",&ch);
+    switch(ch)
+    {
+        case 'a' ... 'z':
+            printf("Lower case alphabet");
+            break;
+        case 'A' ... 'Z':
+            printf("Upper case alphabet");
+            break;
+        default:
+            printf("Special Character");
+    }
+}
+void p4()
+{
+    char ch;
+    printf("Enter a character");
+    scanf("%c",&ch);
+    switch(ch)
+    {
+        case 'a': case 'e': case 'i': case 'o':
+        case 'u': case 'A': case 'E': case 'I':
+        case 'O': case 'U'
+            printf("Vowel");
+            break;
+        case 'b' ... 'd': case 'B' ... 'D': 
+        case 'f' ... 'h': case 'F' ... 'H': 
+        case 'j' ... 'n': case 'J' ... 'N': 
+        case 'p' ... 't': case 'P' ... 'T': 
+        case 'v' ... 'z': case 'V' ... 'Z': 
+            printf("Consonant");
+            break;
+        default:
+            printf("Special Character");
+    }
+}
+void p5()
+{
+    int choice,a,b,L,s;
+    while(1)
+    {
+        system("clear");
+        printf("\n1. LCM");
+        printf("\n2. Sum of Digits");
+        printf("\n3. Volume of Cuboid");
+        printf("\n4. Check Prime");
+        printf("\n5. Exit");
+        printf("\n\nEnter your choice");
+        scanf("%d",&choice);
+        switch(choice)
+        {
+            case 1:
+                printf("\nEnter two numbers");
+                scanf("%d%d",&a,&b);
+                for(L=a>b?a:b;L<=a*b;L++)
+                    if(L%a==0&&L%b==0)
+                        break;
+                printf("LCM is %d",L);
+                
+                break;
+            case 2:
+
+                printf("\nEnter a number");
+                scanf("%d",&a);
+                s=0;
+                while(a)
+                {
+                    s=s+a%10;
+                    a/=10;
+                }
+                break;
+            case 3:
+                printf("\nEnter l,b,h");
+                scanf("%d%d%d",&a,&b,&s);
+                printf("Volume is %d",a*b*s);
+                break;
+            case 4:
+                printf("\nEnter a number");
+                scanf("%d",&a);
+                for(b=2;b<a;b++)
+                    if(a%b==0)
+                        break;
+                if(a==b)
+                    printf("Prime");
+                else
+                    printf("Not prime")
+                break;
+            case 5:
+                exit(0);
+            default:
+                printf("\nInvalid choice, retry");
+        }
+    }
+}
