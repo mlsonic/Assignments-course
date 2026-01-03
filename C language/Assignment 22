@@ -1,0 +1,49 @@
+int factorial(int n){
+    int c=1;
+    for(int i=1;i<=n;i++){
+        c*=i;
+    }
+    return c;
+}
+
+int combination(int n,int r){
+    return factorial(n)/factorial(n-r)/factorial(r);
+}
+
+int arragnement(int n,int r){
+    return factorial(n)/factorial(n-r);
+}
+
+int contains(int num,int digit){
+    while(num){
+        if(num%10 == digit){
+            return 1;
+        }
+        num/=10;
+    }
+    return 0;
+}
+
+int isprime(int n){
+    for(int i=2; i*i<=n; i++){
+        if(n%2==0) return 0;
+    }
+    return 1;
+}
+
+int next_prime(int n){
+    while(!isprime(++n));//loop run till next prime number is found
+    return n;
+}
+
+void print_prime_factor(int num){
+    int i = 2;
+    while(num>1){
+        while(num%i==0){
+            printf("%d",i);
+            num/=i;
+        }
+    }
+    i=next_prime(i);
+}
+
