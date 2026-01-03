@@ -1,0 +1,25 @@
+#include <stdio.h> 
+
+float areaofcircle(int r){
+    return 3.14*r*r;
+}
+
+float simpleinterest(float a,int t, float i){
+    return a*i*t/100;
+}
+
+int checkevenodd(int a){
+    return a%2 == 0;
+}
+
+void printN(int n){
+    for(int i=1;i<=n;i++){
+        printf("%d",i);
+    }
+}
+
+void printoddN(int n){
+    for(int i=1;i<=n;i++){
+            printf("%d",i*2-1);
+    }
+}
