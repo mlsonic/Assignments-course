@@ -1,33 +1,42 @@
-void printN(int n){
-    if(n == 0){
-        return 1;
+void printN(int n)
+{
+    if(n>0)
+    {
+        printN(n-1);
+        printf(" %d",n);
     }
-    printN(n-1);
-    printf("%d",n);
 }
-
-void printreverseN(int n){
-    if(n == 0){
-        return 1;
+void printNReverse(int n)
+{
+    if(n>0)
+    {
+        printf(" %d",n);
+        printNReverse(n-1);     
     }
-    printf("%d",n);
-    printreverseN(n-1);
 }
-
-void printOddN(int n){
-    if(n == 0){
-        return 1;
+void printNOdd(int n)
+{
+    if(n>0)
+    {
+        printNOdd(n-1);
+        printf(" %d",2*n-1);
     }
-    printf("%d",n);
-    printOddN(n-1);
 }
-
-void printreverseOddN(int n){
-    if(n == 0){
-        return 1;
+void printNOddReverse(int n)
+{
+    if(n>0)
+    {
+        printf(" %d",2*n-1);
+        printNOddReverse(n-1);     
     }
-    printf("%d\n",n*2-1);
-    printreverseOddN(n-1);
+}
+void printNEven(int n)
+{
+    if(n>0)
+    {
+        printNEven(n-1);
+        printf(" %d",2*n);
+    }
 }
 
 void printevenN(int n){
