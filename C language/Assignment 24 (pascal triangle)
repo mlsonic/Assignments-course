@@ -45,3 +45,60 @@ void pascaltriangle(int n){
         printf("\n");
     }
 }
+
+int count_digits(int x)
+{
+    int count=0;
+    while(x)
+    {
+        x/=10;
+        count++;
+    }
+    return count;//return number of digit
+}
+
+int power(int d,int n)
+{
+    int i,p;
+    for(i=1,p=1;i<=n;i++)
+        p=p*d;
+    return p;//return power result
+}
+int is_armstrong(int x)
+{
+    int y,n,s=0;
+    y=x;
+    n=count_digits(x); // to count digit
+    while(x){
+        s+=power(x%10,n);
+        x/=10; 
+    }
+    return s==y;
+}
+void print_armstrong(int a,int b)
+{
+    int x;
+    for(x=a;x<=b;x++)
+    {
+        if(is_armstrong(x))//to check if number is strong or not 
+            printf("%d ",x);
+    }
+}
+
+#include <stdio.h>
+
+int fact(int n){
+    int f=1;
+    for(int i = 1 ; i <= n ; i++){
+        f*=i;
+    }
+    return f;
+}
+
+int series(int n){
+    int sum = 0;
+    for(int i = 1 ; i <= n ; i++){
+        sum += fact(i)/i;
+    }
+    return sum;
+}
