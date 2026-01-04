@@ -15,3 +15,33 @@ void printfibonaci(int n){
         printf("%d",c);
     }
 }
+
+int fact(int n){
+    int a=1;
+        for(int i=1;i<=n;i++){
+            a*=i;
+        }
+    return a;
+}
+
+int combi(int a,int b){
+    return fact(a)/fact(a-b)/fact(b);
+}
+
+void pascaltriangle(int n){
+    for(int i = 1 ; i<=n ;i++){
+        int k = 1,r=0;
+        for(int j = 1; j<=2*n; j++){
+            if(j>=n+1-i && j<=n-1+i){
+                if(k){
+                    printf("%2d",combi(i-1,r++));
+                }
+                k=1-k;
+            }
+            else{
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+}
