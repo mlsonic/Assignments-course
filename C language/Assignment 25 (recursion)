@@ -1,0 +1,31 @@
+int printN(int n){
+    if(n == 0){
+        return 1;
+    }
+    printN(n-1);
+    printf("%d",n);
+}
+
+int printOddN(int n){
+    if(n == 0){
+        return 1;
+    }
+    printf("%d",n);
+    printOddN(n-1);
+}
+
+int printreverseOddN(int n){
+    if(n == 0){
+        return 1;
+    }
+    printf("%d\n",n*2-1);
+    printreverseOddN(n-1);
+}
+
+int printevenN(int n){
+    if(n==0){
+        return 1;
+    }
+    printevenN(n-1);
+    printf("%d\n",n*2);
+}
