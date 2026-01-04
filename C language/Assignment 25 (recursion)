@@ -1,4 +1,4 @@
-int printN(int n){
+void printN(int n){
     if(n == 0){
         return 1;
     }
@@ -6,7 +6,15 @@ int printN(int n){
     printf("%d",n);
 }
 
-int printOddN(int n){
+void printreverseN(int n){
+    if(n == 0){
+        return 1;
+    }
+    printf("%d",n);
+    printreverseN(n-1);
+}
+
+void printOddN(int n){
     if(n == 0){
         return 1;
     }
@@ -14,7 +22,7 @@ int printOddN(int n){
     printOddN(n-1);
 }
 
-int printreverseOddN(int n){
+void printreverseOddN(int n){
     if(n == 0){
         return 1;
     }
@@ -22,7 +30,7 @@ int printreverseOddN(int n){
     printreverseOddN(n-1);
 }
 
-int printevenN(int n){
+void printevenN(int n){
     if(n==0){
         return 1;
     }
