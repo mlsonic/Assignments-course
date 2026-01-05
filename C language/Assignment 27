@@ -1,0 +1,34 @@
+int sumN(int n){
+    if(n == 0){
+        return 0;
+    }
+    return n + sumN(n-1);
+}
+
+int sumoddN(int n){
+    if(n == 0){
+        return 0;
+    }
+    return n*2-1 + sumoddN(n-1);
+}
+
+int sumevenN(int n){
+    if(n == 0){
+        return 0;
+    }
+    return n*2 + sumevenN(n-1);
+}
+
+int sumsquareN(int n){
+    if(n == 0){
+        return 0;
+    }
+    return n*n + sumsquareN(n-1);
+}
+
+int sumdigit(int n){
+    if(n == 0){
+        return 0;
+    }
+    return n%10 + sumdigit(n/10);
+}
