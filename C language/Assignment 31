@@ -1,0 +1,32 @@
+int findMax(int a[],int size)
+{
+    int i,max;
+    max=a[0];
+    for(i=1;i<=size-1;i++)
+        if(max<a[i])
+            max=a[i];
+    return max;
+}
+int findMin(int a[],int size)
+{
+    int i,min;
+    min=a[0];
+    for(i=1;i<=size-1;i++)
+        if(min>a[i])
+            min=a[i];
+    return min;
+}
+void bubble_sort(int a[],int size)
+{
+    int i,t,r;
+    for(r=1;r<size;r++)
+    {
+        for(i=0;i<=size-1-r;i++)
+            if(a[i]>a[i+1])
+            {
+                t=a[i];
+                a[i]=a[i+1];
+                a[i+1]=t;
+            }
+    }
+}
