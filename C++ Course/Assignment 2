@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+void f1(){
+    cout << "Hello MySirG";
+}
+
+void f2(){
+    cout << "Hello" << endl << "My SirG";
+}
+
+void f3(){
+    int a,b;
+    cout << "Enter The Numbers : ";
+    cin >> a >> b;
+    cout << "Sum of the number is : " << a+b;
+}
+
+void f4(){
+    int a;
+    cout << "Enter The radius: ";
+    cin >> a;
+    cout << "Area of circle is : " << a * a * 3.14;
+}
+
+void f5(){
+    int a,b,c;
+    cout << "Enter The length,breadth,width : ";
+    cin >> a >> b >> c;
+    cout << "Volume of cuboid is : " << a*b*c;
+}
+
+int main(){
+    f4();
+    cout << endl;
+    return 0;
+}
