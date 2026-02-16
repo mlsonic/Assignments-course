@@ -1,0 +1,124 @@
+#include<stdio.h>
+#include<string.h>
+
+void cntfrq(char* s){
+    for(int i = 0 ; s[i] ; i++){
+        int cnt = 0;
+        for(int j = 0 ; s[j] ; j++){
+            if(s[i] == s[j]) cnt++;
+        }
+        printf("%c appear %d time in string\n",s[i],cnt);
+    }
+}
+
+int findword(char str,char s){
+    for(int i = 0 ; i < strlen(str)-strlen(s);i++){
+        int j = 0;
+        for(j = 0 ; s[j] ; j++){
+            if(str[i+j] != s[j]) break;
+        }
+        if(j == strlen(s)) return 1;
+    }
+    return 0;
+}
+
+char * capitalize(char str[])
+{
+    int i;
+    if(str[0]>='a'&&str[0]<='z')
+        str[0]=str[0]-32;
+    for(i=1;str[i];i++)
+    {
+        if(str[i-1]==' ')
+        {
+            if(str[i]>='a' && str[i]<='z')
+                str[i]=str[i]-32;
+        }
+    }
+    return str;
+}
+
+int countWords(char str[])
+{
+    int i,count=0;
+    //trim(str);
+    for(i=0;str[i];i++)
+        if(str[i]==' ')
+            count++;
+    return count+1;
+}
+
+int countWords(char str[])
+{
+    int i,count=0;
+    //trim(str);
+    for(i=0;str[i];i++)
+        if(str[i]==' ')
+            count++;
+    return count+1;
+}
+char* nameAccronym(char str[])
+{
+    char temp[50];
+    int i,n,j=1,k=0;
+    if(str[0]>='a'&&str[0]<='z')
+        temp[0]=str[0]-32;
+    else
+        temp[0]=str[0];
+    n=countWords(str);
+    for(i=1;str[i];i++)
+    {
+        if(str[i-1]==' ')
+        {
+            j++;
+            if(j==n)
+            {
+                k++;
+                temp[k]=' ';
+                k++;
+                if(str[i]>='a'&&str[i]<='z')
+                    temp[k]=str[i]-32;
+                else
+                    temp[k]=str[i];
+                for(k++,i++;str[i];i++,k++)
+                    temp[k]=str[i];
+                temp[k]='\0';
+            }
+            else
+            {
+                k++;
+                temp[k]=' ';
+                k++;
+                if(str[i]>='a'&&str[i]<='z')
+                    temp[k]=str[i]-32;
+                else
+                    temp[k]=str[i];
+            }
+            
+        }
+    }
+    strcpy(str,temp);
+    return str;
+}
+char* concatenate(char s1[],char s2[])
+{
+    int i,j;
+    for(i=0;s1[i];i++);
+
+    for(j=0;s2[j];j++,i++)
+        s1[i]=s2[j];
+    s1[i]='\0';
+    return s1;
+    
+}
+
+
+int main(){
+    char str[50];
+    printf("Enter the String : ");
+    fgets(str,50,stdin);
+    str[strlen(str)-1] = 0;
+
+    return 0;
+}
+
