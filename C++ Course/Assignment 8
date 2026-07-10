@@ -1,0 +1,110 @@
+#include<iostream>
+using namespace std;
+
+#include<iostream>
+using namespace std;
+
+class Complex{
+    int real, imag;
+public:
+    void setData(int r, int i){
+        real = r;
+        imag = i;
+    }
+    void print(){
+        cout << real << " + " << imag << "i\n" ;
+    }
+};
+
+class Time{
+    private:
+        int hr,min,sec;
+    public:
+        void setdata(int a,int b,int c){
+            hr = a;
+            min = b;
+            sec = c;
+        }
+        void print(){
+            cout << hr <<':'<< min << ':' << sec << '\n';
+        }
+
+};
+
+class Date{
+    private:
+        int d,m,y;
+    public:
+        void setdata(int a,int b, int c){
+            d = a;
+            m = b;
+            y = c;
+        }
+        const char* getmonth(){
+            switch(m){
+                case 1:
+                    return "jan";
+                case 2:
+                    return "feb";
+                case 3:
+                    return "march";
+                case 4:
+                    return "arpil";
+                case 5:
+                    return "may";
+                case 6:
+                    return "june";
+                case 7:
+                    return "july";
+                case 8:
+                    return "aug";
+                case 9:
+                    return "sep";
+                case 10:
+                    return "oct";
+                case 11:
+                    return "nov";
+                case 12:
+                    return "dec";
+                default: return "Invalid Month";
+            }
+
+        }
+        void print(int format = 1){
+            if(format == 1) cout << d <<'/'<< m << '/' << y << '\n';
+            else if(format == 2) cout << d <<'-'<< m << '-' << y << '\n';
+            else{
+                cout << d <<'-'<< getmonth() << '-' << y << '\n';
+            }
+        }
+};
+
+class Circle{
+    private:
+        int radius;
+    public:
+        void setradius(int r){
+            radius = r;
+        }
+        void getradius(){
+            cout << radius << '\n';
+        }
+        void circumference(){
+            cout << 2*3.14*radius << '\n';
+        }
+        void area(){
+            cout << 3.14*radius*radius << '\n';
+        }
+};
+
+
+
+
+int main(){
+    Circle c1;
+    c1.setradius(4);
+    c1.getradius();
+    c1.circumference();
+    c1.area();
+    return 0;
+}
